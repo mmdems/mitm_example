@@ -14,8 +14,8 @@ With help of this system you can:
 System has simple converters: from GMII into RGMII and vice versa
 
 # FIFOs
-fifo_main is main FIFO. It's udef for storing data for packet sniffing
-fifo_inject is used for packet injection
+fifo_main.vhd is main FIFO. It's used for storing data while we sniffing packets.
+fifo_inject.vhd is used for packet injection. Injected packets are being injected 'between' main packets
 
 # CRC32
 This block is used for checking CRC32. It has crc_valid output which detects
